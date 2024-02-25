@@ -1,0 +1,32 @@
+{
+    "html-css-class-completion.enableEmmetSupport": true,
+    "html-css-class-completion.JavaScriptLanguages": [
+        "jsx",
+        "javascript",
+        "javascriptreact",
+        "typescriptreact"
+    ],
+    "html-css-class-completion.HTMLLanguages": [
+        "jsx",
+        "html",
+        "vue",
+        "razor",
+        "blade",
+        "handlebars",
+        "twig",
+        "django-html",
+        "php",
+        "markdown",
+        "erb",
+        "ejs",
+        "svelte"
+    ],
+    "emmet.preferences": {
+
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "editor.fontSize": 16
+}
