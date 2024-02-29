@@ -1,8 +1,9 @@
 'use client'
 import Header from "@/components/header/home-header";
 import Calculator from "@/components/calculator";
-import Cart from "@/components/card/features-card"
-import LogoCarousel from "@/components/slider/slider"
+import Cart from "@/components/card/features-card";
+import LogoCarousel from "@/components/slider/slider";
+import ProgressBar from "@/components/progressbar/progress-bar";
 
 export default function Home() {
   
@@ -26,6 +27,11 @@ const logos = [
               <br /><br />
             Our vision is to create an active omichain community where users of different blockchains can explore, learn, and win, while benefiting from collaborative opportunities and immersive experiences. We aim to transform engagement in digital games into a rewarding experience, paving the way for self-improvement and business opportunities.
             </p>
+            <h1 className="text-center mt-12 text-xl font-Power">UNTIL LISTINGS AND LAUNCH OF MEME KOMBAT</h1>
+            <div className="flex justify-center mt-5">
+            <ProgressBar />
+            </div>
+            <h1 className="text-center mt-12 text-xl font-Power">CHOOSE YOUR CURRENCY</h1>
             <Calculator />
         </section>
 

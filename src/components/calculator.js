@@ -28,7 +28,7 @@ function Calculator() {
   
     return (
       <>
-        <div className="flex flex-col items-center gap-5 mt-12">
+        <div className="flex flex-col items-center gap-5 mt-5">
           <div className="flex gap-3">
             <button
               className={`p-2 ${
