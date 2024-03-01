@@ -87,7 +87,7 @@ const logos = [
     <div className="relative w-full">
       <Image src={'/tokenomics-bg.jpg'} width={"270"} height={"350"} className="-z-10 h-full w-full absolute object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-transparent to-black"></div>
-      <div className="relative pb-[80px]">
+      <div className="relative pb-[90px]">
           <h1 className=" font-Power text-[64px] text-white text-center mt-9">TOKENOMICS</h1>
           <div className="mt-[20px] w-11/12 mx-auto flex gap-12">
             {/* *********************       Left TOKENOMICS Column   ********************** */}
