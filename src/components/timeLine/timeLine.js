@@ -37,7 +37,7 @@ const timeLine = () => {
   <div class="container left">
     <div class="content">
       <h2 className='font-Power text-[32px]'>Planning</h2>
-      <p className='text-[20px] text-[#6F6F6F] mt-4'>-Expand the project's ecosystem by integrating with additional DeFi protocols, dApps, or services within the Solana network.</p>
+      <p className='text-[20px] text-[#6F6F6F] mt-4'>-Expand the projects ecosystem by integrating with additional DeFi protocols, dApps, or services within the Solana network.</p>
         <hr className='border-[#6F6F6F] mt-4' />
         <ul className='list-disc text-[18px] text-[#6F6F6F] mt-4 ml-4'>
             <li>Ecosystem Expansion</li>
