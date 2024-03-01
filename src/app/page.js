@@ -4,6 +4,9 @@ import Calculator from "@/components/calculator";
 import Cart from "@/components/card/features-card";
 import LogoCarousel from "@/components/slider/slider";
 import ProgressBar from "@/components/progressbar/progress-bar";
+import Image from "next/image";
+import StepCard from "@/components/card/step-card";
+import PieChart from "@/components/charts/pie-chart";
 
 export default function Home() {
   
@@ -49,9 +52,68 @@ const logos = [
 
          {/* ************************     Slider         **************************** */}
 
-         <section className="mt-9 w-9/12 mx-auto">
+         <section className="mt-9 w-11/12 mx-auto">
             <LogoCarousel logos={logos} />
         </section>
+
+        {/* ******************************   EARN PASSIVE INCOME    *********************** */}
+
+        <section className="flex mt-9 w-11/12 mx-auto bg-[#17151D] p-9 rounded-3xl">
+          <div className="w-2/4 flex flex-col">
+            <p className="mx-auto mt-[90px] px-3 py-2 bg-slate-300 inline rounded-3xl bg-gradient-to-r from-[#33E3A2] to-blue-500 text-black font-bold text-sm">EARN PASSIVE INCOME</p>
+            <h1 className=" mt-5 text-[35px] font-light text-center leading-10">Earn NFT during presale as a VIP member and get passive income after each tournament</h1>
+            <button className="mt-5 mx-auto px-6 py-4 rounded-full hover:bg-[#33E3A2] mb-[60px] border">LEARN MORE</button>
+          </div>
+          <div className="w-2/4 flex justify-end mt-9"><Image className="origin-bottom-right scale-150" src={"/perrson-1.png"} width={"450"} height={"300"} /></div>
+        </section>
+
+        {/* ******************************   How Staking Works    *********************** */}
+
+        <section className="mt-[50px] w-11/12 mx-auto">
+          <h1 className="text-center font-Power text-[64px]">How Staking Works</h1>
+          <p className="font-Roboto text-[22px] text-[#B7B4BB] mt-3">The point of $MK isn't to just buy and trade, but to stake your token in Meme Kombat and bet on battles for the chance to win big! Alongside our regular battles we will also have larger, more hyped battles for people to participate in with large prizes for winners.
+            </p>
+        </section>
+        <section className="mt-9 p-6 flex gap-12">
+            <StepCard btnRotateDeg="-rotate-12" cardRotateDeg="rotate-3" src="/step1.png" title="BUY $THLX DURING PRESALE"/>
+            <StepCard btnRotateDeg="-rotate-2" cardRotateDeg="-rotate-3" src="/step2.png" title="BUY $THLX DURING PRESALE"/>
+            <StepCard btnRotateDeg="-rotate-12" cardRotateDeg="rotate-3" src="/step3.png" title="BUY $THLX DURING PRESALE"/>
+            <StepCard btnRotateDeg="-rotate-2" cardRotateDeg="-rotate-3" src="/step4.png" title="BUY $THLX DURING PRESALE"/>
+            <StepCard btnRotateDeg="-rotate-12" cardRotateDeg="rotate-3" src="/step5.png" title="BUY $THLX DURING PRESALE"/>
+        </section>
+{/* *********************      TOKENOMICS    ********************** */}
+        <section>
+  <div className={`w-full`}>
+    <div className="relative w-full">
+      <Image src={'/tokenomics-bg.jpg'} width={"270"} height={"350"} className="-z-10 h-full w-full absolute object-cover" />
+      <div className="absolute inset-0 bg-gradient-to-t from-transparent to-black"></div>
+      <div className="relative pb-[80px]">
+          <h1 className=" font-Power text-[64px] text-white text-center mt-9">TOKENOMICS</h1>
+          <div className="mt-[20px] w-11/12 mx-auto flex gap-12">
+            {/* *********************       Left TOKENOMICS Column   ********************** */}
+            <div className="w-2/6">
+              <h2 className="font-bold text-[20px]">50% PRESALE</h2>
+              <h3 className="font-normal text-[17px] mt-4">Half of total token supply will be set aside for the thrillx presale. The intention is for all who buy the presale to participate in competition.</h3>
+              <h2 className="font-bold text-[20px] mt-5">30% FOR STAKING AND COMPETITION REWARDS</h2>
+              <h3 className="font-normal text-[17px] mt-4">We have set aside a large percentage of the supply to support that ecosystem and help maintain balance.</h3>
+            </div>
+            {/* *********************       Center TOKENOMICS Column   ********************** */}
+            <div className="w-2/6">
+                <PieChart />
+            </div>
+            {/* *********************       Right TOKENOMICS Column   ********************** */}
+            <div className="w-2/6">
+            <h2 className="font-bold text-[20px]">10% DEX</h2>
+              <h3 className="font-normal text-[17px] mt-4">10% of the overall supply is reserved for pairing with a liquidity pool on a decentralized exchange.</h3>
+              <h2 className="font-bold text-[20px] mt-5">10% COMMUNITY REWARDS</h2>
+              <h3 className="font-normal text-[17px] mt-4">Thrillx is all about participation and community engagement so we have set aside a good amount of tokens for community.</h3>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
     </>
   );
 }

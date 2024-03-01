@@ -7,6 +7,10 @@
   font-family: "Power";
   src: url("/Power-UB.otf") format("truetype");
 }
+@font-face {
+  font-family: "Bakbak";
+  src: url("/Bakbak.ttf") format("truetype");
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

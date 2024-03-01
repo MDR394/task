@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       fontFamily: {
         Power: ["Power"],
-        Roboto: ["Roboto, sans-serif"]
+        Roboto: ["Roboto, sans-serif"],
+        Bakbak: ["Bakbak"]
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
