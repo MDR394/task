@@ -11,11 +11,12 @@ import PieChart from "@/components/charts/pie-chart";
 export default function Home() {
   
 const logos = [
-  { src: '/logo.png', alt: 'Logo 1' },
-  { src: '/logo.png', alt: 'Logo 1' },
-  { src: '/logo.png', alt: 'Logo 1' },
-  { src: '/logo.png', alt: 'Logo 1' },
-  { src: '/logo.png', alt: 'Logo 1' },
+  { src: '/slide1.png', alt: 'Logo 1' },
+  { src: '/slide2.png', alt: 'Logo 2' },
+  { src: '/slide3.png', alt: 'Logo 3' },
+  { src: '/slide4.png', alt: 'Logo 4' },
+  { src: '/slide5.png', alt: 'Logo 5' },
+  { src: '/slide6.png', alt: 'Logo 6' },
   // Add more logos as needed
 ];
   return (
@@ -52,7 +53,7 @@ const logos = [
 
          {/* ************************     Slider         **************************** */}
 
-         <section className="mt-9 w-11/12 mx-auto">
+         <section className="mt-12 w-11/12 mx-auto">
             <LogoCarousel logos={logos} />
         </section>
 
@@ -71,7 +72,7 @@ const logos = [
 
         <section className="mt-[50px] w-11/12 mx-auto">
           <h1 className="text-center font-Power text-[64px]">How Staking Works</h1>
-          <p className="font-Roboto text-[22px] text-[#B7B4BB] mt-3">The point of $MK isn't to just buy and trade, but to stake your token in Meme Kombat and bet on battles for the chance to win big! Alongside our regular battles we will also have larger, more hyped battles for people to participate in with large prizes for winners.
+          <p className="font-Roboto text-[22px] text-[#B7B4BB] mt-3">The point of $MK is not to just buy and trade, but to stake your token in Meme Kombat and bet on battles for the chance to win big! Alongside our regular battles we will also have larger, more hyped battles for people to participate in with large prizes for winners.
             </p>
         </section>
         <section className="mt-9 p-6 flex gap-12">
@@ -92,7 +93,7 @@ const logos = [
           <div className="mt-[20px] w-11/12 mx-auto flex gap-12">
             {/* *********************       Left TOKENOMICS Column   ********************** */}
             <div className="w-2/6">
-              <h2 className="font-bold text-[20px]">50% PRESALE</h2>
+              <h2 className="font-bold text-[20px]">5% PRESALE</h2>
               <h3 className="font-normal text-[17px] mt-4">Half of total token supply will be set aside for the thrillx presale. The intention is for all who buy the presale to participate in competition.</h3>
               <h2 className="font-bold text-[20px] mt-5">30% FOR STAKING AND COMPETITION REWARDS</h2>
               <h3 className="font-normal text-[17px] mt-4">We have set aside a large percentage of the supply to support that ecosystem and help maintain balance.</h3>
