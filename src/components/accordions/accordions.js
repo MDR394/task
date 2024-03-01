@@ -6,7 +6,7 @@ function accordions() {
       <section className="accordion">
   <div className="tab">
     <input type="checkbox" name="accordion-1" id="cb1"/>
-    <label htmlFor="cb1" className="tab__label">What is THRILLX's NFT Collection?</label>
+    <label htmlFor="cb1" className="tab__label">What is THRILLXs NFT Collection?</label>
     <div className="tab__content">
       <p>Unlock exclusive opportunities with THRILLX NFT Collection! These unique tokens are your key to VIP Trading and top-tier Events, showcasing your ownership and granting access to premium experiences. Elevate your status and dive into a world of elite privileges! 🔑✨ #THLX #VIPAccess #ExclusiveTrading.</p>
     </div>
