@@ -14,11 +14,11 @@ function PieChart() {
     chartInstance.current = new Chart(myChartRef, {
       type: 'pie',
       data: {
-        labels: ['Jan:300', 'Label 2', 'Label 3'],
+        labels: ['Jan:600', 'Feb:100', 'Mar:200'],
         datasets: [
           {
             label: 'My First Dataset',
-            data: [300, 50, 100],
+            data: [600, 100, 200],
             backgroundColor: ['rgb(255, 99, 132)', 'rgb(54, 162, 235)', 'rgb(255, 205, 86)'],
             hoverOffset: 4,
           },

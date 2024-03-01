@@ -8,6 +8,7 @@ import Image from "next/image";
 import StepCard from "@/components/card/step-card";
 import PieChart from "@/components/charts/pie-chart";
 import TimeLine from "@/components/timeLine/timeLine";
+import Accordions from "@/components/accordions/accordions";
 
 export default function Home() {
   
@@ -54,7 +55,7 @@ const logos = [
 
          {/* ************************     Slider         **************************** */}
 
-         <section className="mt-12 w-11/12 mx-auto">
+         <section className="mt-12 w-11/12 mx-auto" id="utility">
             <LogoCarousel logos={logos} />
         </section>
 
@@ -71,25 +72,25 @@ const logos = [
 
         {/* ******************************   How Staking Works    *********************** */}
 
-        <section className="mt-[50px] w-11/12 mx-auto">
+        <section className="mt-[50px] w-11/12 mx-auto" id="steps">
           <h1 className="text-center font-Power text-[64px]">How Staking Works</h1>
           <p className="font-Roboto text-[22px] text-[#B7B4BB] mt-3">The point of $MK is not to just buy and trade, but to stake your token in Meme Kombat and bet on battles for the chance to win big! Alongside our regular battles we will also have larger, more hyped battles for people to participate in with large prizes for winners.
             </p>
         </section>
         <section className="mt-9 p-6 flex gap-12">
-            <StepCard btnRotateDeg="-rotate-12" cardRotateDeg="rotate-3" src="/step1.png" title="BUY $THLX DURING PRESALE"/>
-            <StepCard btnRotateDeg="-rotate-2" cardRotateDeg="-rotate-3" src="/step2.png" title="BUY $THLX DURING PRESALE"/>
-            <StepCard btnRotateDeg="-rotate-12" cardRotateDeg="rotate-3" src="/step3.png" title="BUY $THLX DURING PRESALE"/>
-            <StepCard btnRotateDeg="-rotate-2" cardRotateDeg="-rotate-3" src="/step4.png" title="BUY $THLX DURING PRESALE"/>
-            <StepCard btnRotateDeg="-rotate-12" cardRotateDeg="rotate-3" src="/step5.png" title="BUY $THLX DURING PRESALE"/>
+            <StepCard btnRotateDeg="-rotate-12" cardRotateDeg="rotate-3" src="/step1.png" title="BUY $THLX DURING PRESALE" step="1"/>
+            <StepCard btnRotateDeg="-rotate-2" cardRotateDeg="-rotate-3" src="/step2.png" title="CHOOSE YOUR COMPETITION" step="2"/>
+            <StepCard btnRotateDeg="-rotate-12" cardRotateDeg="rotate-3" src="/step3.png" title="STAKE TOKENS" step="3"/>
+            <StepCard btnRotateDeg="-rotate-2" cardRotateDeg="-rotate-3" src="/step4.png" title="ENJOY THE GAME" step="4"/>
+            <StepCard btnRotateDeg="-rotate-12" cardRotateDeg="rotate-3" src="/step5.png" title="WIN THE JACKPOT" step="5"/>
         </section>
 {/* *********************      TOKENOMICS    ********************** */}
-        <section>
+        <section id="tokens">
   <div className={`w-full`}>
     <div className="relative w-full">
       <Image src={'/tokenomics-bg.jpg'} width={"270"} height={"350"} alt="tokenomics-bg" className="-z-10 h-full w-full absolute object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-transparent to-black"></div>
-      <div className="relative pb-[90px]">
+      <div className="relative pb-[130px]">
           <h1 className=" font-Power text-[64px] text-white text-center mt-9">TOKENOMICS</h1>
           <div className="mt-[20px] w-11/12 mx-auto flex gap-12">
             {/* *********************       Left TOKENOMICS Column   ********************** */}
@@ -117,10 +118,89 @@ const logos = [
 </section>
 
  {/* *****************************       ROADMAP         **************************** */}
-<section className="mt-12 pb-12">
+<section className="mt-12 pb-12" id="roadmap">
 <h1 className=" font-Power text-[64px] text-white text-center mb-4 ">ROADMAP</h1>
   <TimeLine />
 </section>
+
+ {/* ************************      JOIN OUR PRIZE GAME!   **************************/}
+ <section>
+ <div className={`w-full`}>
+    <div className="relative w-full">
+      <Image src={'/screen.jpg'} width={"270"} height={"350"} alt="tokenomics-bg" className="-z-10 h-full w-full absolute object-cover" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black to-black/80"></div>
+      <div className="relative pb-[100px] pt-[100px]">
+          
+          <div className="mt-[20px] w-11/12 mx-auto flex justify-center">
+            {/* *********************       Left Column   ********************** */}
+            <div className="w-[30%] flex flex-col justify-between items-center">
+            <Image src={"/circle1.png"} width={30} height={30} alt="icon" className=""/>
+            <div className="flex justify-end w-full">
+            <Image src={"/bitcoin.png"} width={80} height={30} alt="icon" className="float-end"/>
+            </div>
+            </div>
+            {/* *********************       Center Column   ********************** */}
+            <div className="w-[40%">
+            <h1 className=" font-Power text-[71px] text-white text-center leading-[92px]">JOIN OUR <br /> PRIZE <br /> GAME!</h1>
+            </div>
+            {/* *********************       Right Column   ********************** */}
+            <div className="w-[30%] flex flex-col justify-between items-center">
+            <Image src={"/ethereum2.png"} width={60} height={30} alt="icon" className=""/>
+            <div className="flex justify-start w-full">
+            <Image src={"/x.png"} width={30} height={30} alt="icon" className="float-end"/>
+            </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ {/* ****************************         accordions        ************************ */}
+ <section className="w-[650px] mx-auto mb-[100px]">
+  <Accordions />
+ </section>
+
+ {/* ************************      Footer Logo Area   **************************/}
+ <section>
+ <div className={`w-full`}>
+    <div className="w-full">
+      
+      <div className="pb-[100px]">
+          
+          <div className="mt-[20px] w-11/12 mx-auto flex justify-center">
+            {/* *********************       Left Column   ********************** */}
+            <div className="w-[30%] flex flex-col justify-between items-center">
+            <Image src={"/ethereum1.png"} width={30} height={30} alt="ethereum1"/>
+            <div className="flex justify-end w-full">
+            <Image src={"/circle3.png"} width={20} height={30} alt="circle3" className="float-end"/>
+            </div>
+            </div>
+            {/* *********************       Center Column   ********************** */}
+            <div className="w-[40%] flex flex-col items-center">
+            <Image src={"/logo.png"} width={200} height={30} alt="logo"/>
+            <h2 className="font-Power text-center text-[23px] mt-8">Get your spot WIN your <br /> prizes!</h2>
+            </div>
+            {/* *********************       Right Column   ********************** */}
+            <div className="w-[30%] flex flex-col justify-between items-center">
+            <Image src={"/x.png"} width={60} height={30} alt="x"/>
+            <div className="flex justify-start w-full">
+            <Image src={"/circle1.png"} width={30} height={30} alt="circle1" className="float-end"/>
+            </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <section className="w-11/12 mx-auto">
+  <hr className="border-[#A8A8A8]"/>
+  <div className="flex justify-between mt-4 mb-7">
+    <p>© 2023 THRILLX. All rights reserved. | EE -DIGITAL AGENCY</p>
+    <p>Privacy policy | Terms of use</p>
+  </div>
+ </section>
     </>
   );
 }

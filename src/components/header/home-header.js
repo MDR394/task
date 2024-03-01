@@ -13,10 +13,10 @@ const header = () => {
               <Image src={'/logo.png'} width="200" height="200" alt='logo' />
             </div>
             <div className="menu md:flex gap-8 my-auto hidden">
-              <Link href={"#"} className="font-bold text-[20px]">Utility</Link>
-              <Link href={"#"} className="font-bold text-[20px]">How It Works</Link>
-              <Link href={"#"} className="font-bold text-[20px]">Tokenomics</Link>
-              <Link href={"#"} className="font-bold text-[20px]">Roadmap</Link>
+              <Link href={"#utility"} className="font-bold text-[20px]">Utility</Link>
+              <Link href={"#steps"} className="font-bold text-[20px]">How It Works</Link>
+              <Link href={"#tokens"} className="font-bold text-[20px]">Tokenomics</Link>
+              <Link href={"#roadmap"} className="font-bold text-[20px]">Roadmap</Link>
             </div>
             <div className="empty">
               <p></p>
