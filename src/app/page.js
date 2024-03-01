@@ -64,7 +64,7 @@ const logos = [
             <h1 className=" mt-5 text-[35px] font-light text-center leading-10">Earn NFT during presale as a VIP member and get passive income after each tournament</h1>
             <button className="mt-5 mx-auto px-6 py-4 rounded-full hover:bg-[#33E3A2] mb-[60px] border">LEARN MORE</button>
           </div>
-          <div className="w-2/4 flex justify-end mt-9"><Image className="origin-bottom-right scale-150" src={"/perrson-1.png"} width={"450"} height={"300"} /></div>
+          <div className="w-2/4 flex justify-end mt-9"><Image className="origin-bottom-right scale-150" src={"/perrson-1.png"} width={"450"} height={"300"} alt="person"/></div>
         </section>
 
         {/* ******************************   How Staking Works    *********************** */}
@@ -85,7 +85,7 @@ const logos = [
         <section>
   <div className={`w-full`}>
     <div className="relative w-full">
-      <Image src={'/tokenomics-bg.jpg'} width={"270"} height={"350"} className="-z-10 h-full w-full absolute object-cover" />
+      <Image src={'/tokenomics-bg.jpg'} width={"270"} height={"350"} alt="tokenomics-bg" className="-z-10 h-full w-full absolute object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-transparent to-black"></div>
       <div className="relative pb-[90px]">
           <h1 className=" font-Power text-[64px] text-white text-center mt-9">TOKENOMICS</h1>

@@ -7,7 +7,7 @@ const card = ({src, title, detail}) => {
       {/* *************************    Card 1    ************************* */}
       <div className="md:w-1/4 bg-gray-5 bg-[#8C33FF] rounded-3xl">
           <div className="relative h-[350px] w-full rounded-3xl">
-          <Image src={src} width={"300"} height={"400"} className="z-0 h-full w-full rounded-3xl object-cover" />
+          <Image src={src} width={"300"} height={"400"} alt='card-img' className="z-0 h-full w-full rounded-3xl object-cover" />
         <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-3xl"></div>
         <div className="absolute bottom-4 left-4 right-4 text-left">
           <h1 className="text-[33px] font-Power font-semibold text-white">{title}</h1>
