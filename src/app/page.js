@@ -7,6 +7,7 @@ import ProgressBar from "@/components/progressbar/progress-bar";
 import Image from "next/image";
 import StepCard from "@/components/card/step-card";
 import PieChart from "@/components/charts/pie-chart";
+import TimeLine from "@/components/timeLine/timeLine";
 
 export default function Home() {
   
@@ -93,7 +94,7 @@ const logos = [
           <div className="mt-[20px] w-11/12 mx-auto flex gap-12">
             {/* *********************       Left TOKENOMICS Column   ********************** */}
             <div className="w-2/6">
-              <h2 className="font-bold text-[20px]">5% PRESALE</h2>
+              <h2 className="font-bold text-[20px]">50% PRESALE</h2>
               <h3 className="font-normal text-[17px] mt-4">Half of total token supply will be set aside for the thrillx presale. The intention is for all who buy the presale to participate in competition.</h3>
               <h2 className="font-bold text-[20px] mt-5">30% FOR STAKING AND COMPETITION REWARDS</h2>
               <h3 className="font-normal text-[17px] mt-4">We have set aside a large percentage of the supply to support that ecosystem and help maintain balance.</h3>
@@ -115,6 +116,11 @@ const logos = [
   </div>
 </section>
 
+ {/* *****************************       ROADMAP         **************************** */}
+<section className="mt-12 pb-12">
+<h1 className=" font-Power text-[64px] text-white text-center mb-4 ">ROADMAP</h1>
+  <TimeLine />
+</section>
     </>
   );
 }
