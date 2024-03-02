@@ -105,8 +105,10 @@
   @media screen and (max-width: 600px) {
   /* Place the timelime to the left */
     .timeline::after {
-      left: 31px;
+      left: 28px;
+      height: 975px;
     }
+    
   
   /* Full-width containers */
     .container {

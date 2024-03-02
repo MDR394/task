@@ -55,8 +55,8 @@ function Calculator() {
               BDC
             </button>
           </div>
-          <div className='flex gap-6 w-9/12 justify-between'>
-          <div className='flex flex-col gap-2 w-6/12'>
+          <div className='flex flex-col md:flex-row gap-6 w-11/12 md:w-9/12 justify-between'>
+          <div className='flex flex-col gap-2 w-full md:w-6/12'>
             <label>{selectedCurrency} Sie zahlen</label>
             <input
               className=" bg-gray-600 p-2 text-left"
@@ -67,7 +67,7 @@ function Calculator() {
             />
             
           </div>
-          <div className='flex flex-col gap-2 w-6/12'>
+          <div className='flex flex-col gap-2 w-full md:w-6/12'>
             <label>$MK Sie erhalten</label>
             <input placeholder='0' className=" bg-gray-600 p-2 text-left w-full" type="text" disabled value={convertToMK()} />
           </div>
