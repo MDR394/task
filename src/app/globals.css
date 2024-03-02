@@ -40,3 +40,12 @@ body {
     text-wrap: balance;
   }
 }
+
+@media screen and (max-width: 500px) {
+  #logo{
+    width: 100px;
+  }
+  #slider-logo{
+    width: 150px;
+  }
+  }

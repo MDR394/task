@@ -6,7 +6,7 @@ const ProgressBar = ({ progress }) => {
     <div className={styles.progressBarContainer}>
       <div className={styles.progressBar} style={{ width: `${progress}%` }}>
         <div className='flex justify-center my-auto'>
-          <p>USDT erhoben: ${progress * 100000}/10000000</p>
+          <p className='text-[15px] md:text-lg'>USDT erhoben: ${progress * 100000}/10000000</p>
         </div>
       </div>
     </div>

@@ -106,7 +106,7 @@
   /* Place the timelime to the left */
     .timeline::after {
       left: 28px;
-      height: 975px;
+      height: 100%;
     }
     
   

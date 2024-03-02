@@ -9,7 +9,7 @@ import StepCard from "@/components/card/step-card";
 import PieChart from "@/components/charts/pie-chart";
 import TimeLine from "@/components/timeLine/timeLine";
 import Accordions from "@/components/accordions/accordions";
-
+import Timer from "@/components/timer";
 export default function Home() {
   
 const logos = [
@@ -21,13 +21,16 @@ const logos = [
   { src: '/slide6.png', alt: 'Logo 6' },
   // Add more logos as needed
 ];
+
   return (
     <>
         <Header />
-
+        <section className="mt-[100px] md:mt-[400px] flex justify-center">
+        <Timer />
+        </section>
         {/* *********************    Our Vision     *************************** */}
 
-        <section className="mt-[100px] md:mt-[400px] w-11/12 mx-auto">
+        <section className="w-11/12 mx-auto">
           <h1 className="text-center font-Power text-[44px] md:text-[64px]">Our Vision</h1>
           <p className="font-Roboto text-[22px] text-[#B7B4BB] mt-3">With a market worth over $2,531 billion and more than 2.5 billion users worldwide, casino games, mobile games, sports betting and lottery games offer huge potential for competitive tournaments. We aim to energize this ecosystem by launching digital tournaments where participants feed a jackpot via their registrations, then compete to win it.
               <br /><br />
@@ -63,8 +66,8 @@ const logos = [
 
         <section className="flex flex-col-reverse md:flex-row mt-9 w-11/12 mx-auto bg-[#17151D] p-2 md:p-9 rounded-3xl">
           <div className="w-full md:w-2/4 flex flex-col">
-            <p className="mx-auto mt-[90px] px-3 py-2 bg-slate-300 inline rounded-3xl bg-gradient-to-r from-[#33E3A2] to-blue-500 text-black font-bold text-sm">EARN PASSIVE INCOME</p>
-            <h1 className=" mt-5 text-[35px] font-light text-center leading-10">Earn NFT during presale as a VIP member and get passive income after each tournament</h1>
+            <p className="mx-auto mt-12 md:mt-[90px] px-3 py-2 bg-slate-300 inline rounded-3xl bg-gradient-to-r from-[#33E3A2] to-blue-500 text-black font-bold text-sm">EARN PASSIVE INCOME</p>
+            <h1 className=" mt-5 text-[25px] md:text-[35px] font-light text-center leading-10">Earn NFT during presale as a VIP member and get passive income after each tournament</h1>
             <button className="mt-5 mx-auto px-6 py-4 rounded-full hover:bg-[#33E3A2] mb-[60px] border">LEARN MORE</button>
           </div>
           <div className="w-full md:w-2/4 flex justify-end mt-9"><Image className="origin-bottom-right md:mt-0 -mt-[80px] scale-105 md:scale-150" id="person" src={"/perrson-1.png"} width={"450"} height={"300"} alt="person"/></div>

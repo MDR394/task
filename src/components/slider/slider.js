@@ -43,7 +43,7 @@ const LogoCarousel = ({ logos }) => {
     <Slider {...settings}>
       {logos.map((logo, index) => (
         <div key={index}>
-          <Image width={200} height={100} src={logo.src} alt={logo.alt} />
+          <Image id='slider-logo' width={200} height={100} src={logo.src} alt={logo.alt} />
         </div>
       ))}
     </Slider>
