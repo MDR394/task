@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @font-face {
   font-family: "Power";
   src: url("/Power-UB.otf") format("truetype");
@@ -42,13 +42,18 @@ body {
 }
 
 @media screen and (max-width: 500px) {
-  #logo{
+  #logo {
     width: 100px;
   }
-  #slider-logo{
+  #slider-logo {
     width: 150px;
   }
-  #header_img{
+  #header_img {
     top: 50px;
+    scale: 1.2;
   }
+  #solana {
+    margin-top: 10px;
+    scale: 1.1;
   }
+}
