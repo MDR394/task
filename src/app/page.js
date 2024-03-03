@@ -9,7 +9,8 @@ import StepCard from "@/components/card/step-card";
 import PieChart from "@/components/charts/pie-chart";
 import TimeLine from "@/components/timeLine/timeLine";
 import Accordions from "@/components/accordions/accordions";
-import Timer from "@/components/timer";
+
+
 export default function Home() {
   
 const logos = [
@@ -25,23 +26,23 @@ const logos = [
   return (
     <>
         <Header />
-        <section className="mt-[100px] md:mt-[400px] flex justify-center">
-        <Timer />
-        </section>
-        {/* *********************    Our Vision     *************************** */}
-
-        <section className="w-11/12 mx-auto">
-          <h1 className="text-center font-Power text-[44px] md:text-[64px]">Our Vision</h1>
-          <p className="font-Roboto text-[22px] text-[#B7B4BB] mt-3">With a market worth over $2,531 billion and more than 2.5 billion users worldwide, casino games, mobile games, sports betting and lottery games offer huge potential for competitive tournaments. We aim to energize this ecosystem by launching digital tournaments where participants feed a jackpot via their registrations, then compete to win it.
-              <br /><br />
-            Our vision is to create an active omichain community where users of different blockchains can explore, learn, and win, while benefiting from collaborative opportunities and immersive experiences. We aim to transform engagement in digital games into a rewarding experience, paving the way for self-improvement and business opportunities.
-            </p>
+        <section className="w-11/12 mx-auto mt-[200px] md:mt-[400px]">
             <h1 className="text-center mt-12 text-xl font-Power">UNTIL LISTINGS AND LAUNCH OF MEME KOMBAT</h1>
             <div className="flex justify-center mt-5">
             <ProgressBar />
             </div>
             <h1 className="text-center mt-12 text-xl font-Power">CHOOSE YOUR CURRENCY</h1>
             <Calculator />
+        </section>
+        {/* *********************    Our Vision     *************************** */}
+
+        <section className="w-11/12 mx-auto mt-12">
+          <h1 className="text-center font-Power text-[44px] md:text-[64px]">Our Vision</h1>
+          <p className="font-Roboto text-[22px] text-[#B7B4BB] mt-3">With a market worth over $2,531 billion and more than 2.5 billion users worldwide, casino games, mobile games, sports betting and lottery games offer huge potential for competitive tournaments. We aim to energize this ecosystem by launching digital tournaments where participants feed a jackpot via their registrations, then compete to win it.
+              <br /><br />
+            Our vision is to create an active omichain community where users of different blockchains can explore, learn, and win, while benefiting from collaborative opportunities and immersive experiences. We aim to transform engagement in digital games into a rewarding experience, paving the way for self-improvement and business opportunities.
+            </p>
+            
         </section>
 
          {/* *********************    Feature     *************************** */}

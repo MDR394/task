@@ -7,7 +7,9 @@ const header = () => {
     <>
     <header>
         <div className="w-full flex justify-center">
-          <Image src={'/header-bg.png'} className="absolute -z-10" width="1250" height={"1000"} alt='logo'></Image>
+          {/* <Image src={'/header-bg.png'} className="absolute -z-10" width="1250" height={"1000"} alt='logo'></Image> */}
+          <Image src={'/solana-ring.png'} id='solana' className="absolute -z-10" width="1250" height={"1000"} alt='logo'></Image>
+          <Image src={'/header.png'} id='header_img' className="absolute -z-8 top-[80px]" width="1000" height={"1000"} alt='logo'></Image>
           <div className="bg-auto bg-no-repeat bg-center  w-10/12 mx-auto flex justify-between pt-5">
             <div className="logo">
               <Image src={'/logo.png'} id='logo' width="200" height="200" alt='logo' />
