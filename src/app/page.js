@@ -27,12 +27,9 @@ export default function Home() {
       {/* ***********************      CHOOSE YOUR CURRENCY      ************************ */}
       <section className="w-11/12 mx-auto mt-[200px] md:mt-[400px]">
         <h1 className="font-Roboto text-[22px] text-[#B7B4BB] mt-3 text-center">
-          With a market worth over $2,531 billion and more than 2.5 billion
-          users worldwide, casino games, mobile games, sports betting and
-          lottery games offer huge potential for competitive tournaments. We aim
-          to energize this ecosystem by launching digital tournaments where
-          participants feed a jackpot via their registrations, then compete to
-          win it.
+          Valued at $2,531 billion with 2.5 billion users, the gaming industry
+          offers vast tournament potential. We're launching digital tournaments
+          where players fund a jackpot through entry fees and compete to win it.
         </h1>
         {/* <div className="flex justify-center mt-5">
           <ProgressBar />
