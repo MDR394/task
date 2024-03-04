@@ -28,7 +28,7 @@ export default function Home() {
       <section className="w-11/12 mx-auto mt-[200px] md:mt-[400px]">
         <h1 className="font-Roboto text-[22px] text-[#B7B4BB] mt-3 text-center">
           Valued at $2,531 billion with 2.5 billion users, the gaming industry
-          offers vast tournament potential. We're launching digital tournaments
+          offers vast tournament potential. We are launching digital tournaments
           where players fund a jackpot through entry fees and compete to win it.
         </h1>
         {/* <div className="flex justify-center mt-5">
