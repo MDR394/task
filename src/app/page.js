@@ -26,7 +26,7 @@ export default function Home() {
       <Header />
       {/* ***********************      CHOOSE YOUR CURRENCY      ************************ */}
       <section className="w-11/12 mx-auto mt-[200px] md:mt-[400px]">
-        <h1 className="font-Roboto text-[22px] text-[#B7B4BB] mt-3">
+        <h1 className="font-Roboto text-[22px] text-[#B7B4BB] mt-3 text-center">
           With a market worth over $2,531 billion and more than 2.5 billion
           users worldwide, casino games, mobile games, sports betting and
           lottery games offer huge potential for competitive tournaments. We aim
@@ -50,15 +50,7 @@ export default function Home() {
         <h1 className="text-center font-Power text-[44px] md:text-[64px]">
           Our Vision
         </h1>
-        <p className="font-Roboto text-[22px] text-[#B7B4BB] mt-3">
-          With a market worth over $2,531 billion and more than 2.5 billion
-          users worldwide, casino games, mobile games, sports betting and
-          lottery games offer huge potential for competitive tournaments. We aim
-          to energize this ecosystem by launching digital tournaments where
-          participants feed a jackpot via their registrations, then compete to
-          win it.
-          <br />
-          <br />
+        <p className="font-Roboto text-[22px] text-[#B7B4BB] mt-3 text-center">
           Our vision is to create an active omichain community where users of
           different blockchains can explore, learn, and win, while benefiting
           from collaborative opportunities and immersive experiences. We aim to
@@ -140,7 +132,7 @@ export default function Home() {
         <h1 className="text-center font-Power text-[44px] md:text-[64px]">
           How Staking Works
         </h1>
-        <p className="font-Roboto text-[22px] text-[#B7B4BB] mt-3">
+        <p className="font-Roboto text-[22px] text-[#B7B4BB] mt-3 text-center">
           The point of $MK is not to just buy and trade, but to stake your token
           in Meme Kombat and bet on battles for the chance to win big! Alongside
           our regular battles we will also have larger, more hyped battles for
@@ -316,7 +308,7 @@ export default function Home() {
       </section>
 
       {/* ****************************         accordions        ************************ */}
-      <section className="w-11/12 mt-6 md:w-[650px] mx-auto mb-[100px]">
+      <section className="w-11/12 mt-6 md:w-[800px] mx-auto mb-[100px]">
         <Accordions />
       </section>
 
