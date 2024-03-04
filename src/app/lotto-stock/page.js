@@ -72,32 +72,14 @@ function page() {
             <h1 className="text-[21px] text-[#021133] font-Power font-extrabold ml-4 mt-4">
               How to play
             </h1>
-            <div className="ml-4 mt-1 flex flex-row gap-8 w-full">
-              <div className="flex flex-col gap-4 w-[40%]">
-                <ul className="list-disc ml-4">
-                  <li className="text-[14px] font-Roboto text-gray-500">
-                    List Item #3
-                  </li>
-                  <li className="text-[14px] font-Roboto text-gray-500">
-                    List Item #3
-                  </li>
-                  <li className="text-[14px] font-Roboto text-gray-500">
-                    List Item #3
-                  </li>
-                </ul>
-                <button className="text-[15px] font-Roboto py-2 px-5 rounded-xl bg-gradient-to-t from-[#021133] via-[#021133] to-[#004F80]">
-                  Check Now
-                </button>
-              </div>
-
-              <div className="flex flex-col items-center gap-4 bg-[#021133] rounded-xl py-3  w-[40%]">
-                <button className="text-[15px] font-Roboto py-2 px-5 rounded-xl bg-gradient-to-t from-[#002655] via-[#021133] to-[#004F80]">
-                  Check Now
-                </button>
-                <button className="text-[15px] font-Roboto py-2 px-5 rounded-xl bg-gradient-to-t from-[#002655] via-[#021133] to-[#004F80]">
-                  Check Now
-                </button>
-              </div>
+            <div className="mx-4 mt-1 flex flex-col gap-1">
+              <p className="text-[14px] font-Roboto text-gray-500">
+                The point of $MK is not to just buy and trade, but to stake your
+                token in Meme Kombat and bet on battles for the chance to win
+                big! The point of $MK is not to just buy and trade, but to stake
+                your token in Meme Kombat and bet on battles.
+              </p>
+              <p className="text-[14px] font-Roboto text-black">READ MORE »</p>
             </div>
           </div>
           {/* *******************************   Post Card 1    *************************** */}

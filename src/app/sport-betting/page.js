@@ -72,134 +72,391 @@ const sportBetting = () => {
         </div>
       </header>
 
-      <section className="w-11/12 mx-auto mt-[230px] md:mt-[500px] bg-[#D2E2F1] p-6 rounded-2xl mb-12">
-        <div className="flex md:flex-row md:flex-wrap xl:flex-nowrap flex-col  gap-6">
+      <section className="w-11/12 mx-auto mt-[230px] md:mt-[500px] bg-[#D2E2F1] p-6 rounded-3xl mb-12">
+        <div className="flex md:flex-row md:flex-wrap xl:flex-nowrap flex-col  gap-4">
           {/* ***********************     How to play Card      ************************* */}
 
-          <div className="bg-white w-full md:w-[48%] xl:w-[35%] rounded-2xl pb-3">
-            <Image
-              src={"/lotto.png"}
-              width={600}
-              height={200}
-              alt="card"
-              style={{
-                borderRadius: "1rem",
-                width: "100%",
-                height: "200px",
-                objectFit: "cover",
-                objectPosition: "top", // You can adjust this value as needed
-              }}
-            />
-            <h1 className="text-[21px] text-[#021133] font-Power font-extrabold ml-4 mt-4">
-              How to play
-            </h1>
-            <div className="ml-4 mt-1 flex flex-row gap-8 w-full">
-              <div className="flex flex-col gap-4 w-[40%]">
-                <ul className="list-disc ml-4">
-                  <li className="text-[14px] font-Roboto text-gray-500">
-                    List Item #3
-                  </li>
-                  <li className="text-[14px] font-Roboto text-gray-500">
-                    List Item #3
-                  </li>
-                  <li className="text-[14px] font-Roboto text-gray-500">
-                    List Item #3
-                  </li>
-                </ul>
-                <button className="text-[15px] font-Roboto py-2 px-5 rounded-xl bg-gradient-to-t from-[#021133] via-[#021133] to-[#004F80]">
-                  Check Now
-                </button>
+          <div className="bg-white w-full md:w-[48%] xl:w-[25%] rounded-3xl pb-3">
+            <div className="relative h-[200px] w-full rounded-3xl">
+              <Image
+                src={"/lotto.png"}
+                width={"300"}
+                height={"400"}
+                alt="card-img"
+                className="z-0 h-full w-full rounded-3xl object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-3xl"></div>
+              <div className="absolute bottom-4 left-4 right-4 text-left">
+                <h1 className="text-[33px] md:text-[28px] xl:text-[33px] font-Power font-semibold text-white">
+                  Football
+                </h1>
               </div>
+            </div>
 
-              <div className="flex flex-col items-center gap-4 bg-[#021133] rounded-xl py-3  w-[40%]">
-                <button className="text-[15px] font-Roboto py-2 px-5 rounded-xl bg-gradient-to-t from-[#002655] via-[#021133] to-[#004F80]">
-                  Check Now
-                </button>
-                <button className="text-[15px] font-Roboto py-2 px-5 rounded-xl bg-gradient-to-t from-[#002655] via-[#021133] to-[#004F80]">
-                  Check Now
-                </button>
+            <div className="flex flex-col mx-3 mt-4 gap-5">
+              {/* *******************  1st Row  ***************** */}
+              <div className="flex flex-row justify-between">
+                <div className="w-[48%] my-auto">
+                  <p className="text-[11px] text-bold font-Roboto text-black">
+                    👕 Manchester United
+                  </p>
+                  <p className="text-[11px] text-bold font-Roboto text-black">
+                    👕 Manchester United
+                  </p>
+                </div>
+                <div className="w-[48%] flex justify-end gap-1">
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                </div>
+              </div>
+              {/* *******************  2nd Row  ***************** */}
+              <div className="flex flex-row justify-between">
+                <div className="w-[48%] my-auto">
+                  <p className="text-[11px] text-bold font-Roboto text-black">
+                    👕 Manchester United
+                  </p>
+                  <p className="text-[11px] text-bold font-Roboto text-black">
+                    👕 Manchester United
+                  </p>
+                </div>
+                <div className="w-[48%] flex justify-end gap-1">
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                </div>
+              </div>
+              {/* *******************  3rd Row  ***************** */}
+              <div className="flex flex-row justify-between">
+                <div className="w-[48%] my-auto">
+                  <p className="text-[11px] text-bold font-Roboto text-black">
+                    👕 Manchester United
+                  </p>
+                  <p className="text-[11px] text-bold font-Roboto text-black">
+                    👕 Manchester United
+                  </p>
+                </div>
+                <div className="w-[48%] flex justify-end gap-1">
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           {/* *******************************   Post Card 1    *************************** */}
-          <div className="w-full md:w-[48%] xl:w-[23.333%]  bg-white rounded-2xl">
-            <Image
-              src={"/step3.png"}
-              width={600}
-              height={200}
-              alt="card"
-              style={{
-                borderRadius: "1rem",
-                width: "100%",
-                height: "200px",
-                objectFit: "cover",
-                objectPosition: "top", // You can adjust this value as needed
-              }}
-            />
-            <h1 className="text-[21px] text-[#021133] font-Power font-extrabold ml-4 mt-4">
-              ENJOY THE GAME
-            </h1>
-            <div className="mx-4 mt-1 flex flex-col gap-2 ">
-              <p className="text-[14px] font-Roboto text-gray-500">
-                The point of $MK is not to just buy and trade, but to stake your
-                token in Meme Kombat and bet on battles for the chance to win
-                big! Alongside our
-              </p>
-              <p className="text-[14px] font-Roboto text-black">READ MORE »</p>
+          <div className="w-full md:w-[48%] xl:w-[25%]  bg-white rounded-3xl">
+            <div className="relative h-[200px] w-full rounded-3xl">
+              <Image
+                src={"/step3.png"}
+                width={"300"}
+                height={"400"}
+                alt="card-img"
+                className="z-0 h-full w-full rounded-3xl object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-3xl"></div>
+              <div className="absolute bottom-4 left-4 right-4 text-left">
+                <h1 className="text-[33px] md:text-[28px] xl:text-[33px] font-Power font-semibold text-white">
+                  Basketball
+                </h1>
+              </div>
+            </div>
+            <div className="flex flex-col mx-3 mt-4 gap-5">
+              {/* *******************  1st Row  ***************** */}
+              <div className="flex flex-row justify-between">
+                <div className="w-[48%] my-auto">
+                  <p className="text-[11px] text-bold font-Roboto text-black">
+                    👕 Manchester United
+                  </p>
+                  <p className="text-[11px] text-bold font-Roboto text-black">
+                    👕 Manchester United
+                  </p>
+                </div>
+                <div className="w-[48%] flex justify-end gap-1">
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                </div>
+              </div>
+              {/* *******************  2nd Row  ***************** */}
+              <div className="flex flex-row justify-between">
+                <div className="w-[48%] my-auto">
+                  <p className="text-[11px] text-bold font-Roboto text-black">
+                    👕 Manchester United
+                  </p>
+                  <p className="text-[11px] text-bold font-Roboto text-black">
+                    👕 Manchester United
+                  </p>
+                </div>
+                <div className="w-[48%] flex justify-end gap-1">
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                </div>
+              </div>
+              {/* *******************  3rd Row  ***************** */}
+              <div className="flex flex-row justify-between">
+                <div className="w-[48%] my-auto">
+                  <p className="text-[11px] text-bold font-Roboto text-black">
+                    👕 Manchester United
+                  </p>
+                  <p className="text-[11px] text-bold font-Roboto text-black">
+                    👕 Manchester United
+                  </p>
+                </div>
+                <div className="w-[48%] flex justify-end gap-1">
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           {/* *******************************   Post Card 2    *************************** */}
-          <div className="w-full md:w-[48%] xl:w-[23.333%] bg-white rounded-2xl">
-            <Image
-              src={"/step4.png"}
-              width={600}
-              height={200}
-              alt="card"
-              style={{
-                borderRadius: "1rem",
-                width: "100%",
-                height: "200px",
-                objectFit: "cover",
-                objectPosition: "top", // You can adjust this value as needed
-              }}
-            />
-            <h1 className="text-[21px] text-[#021133] font-Power font-extrabold ml-4 mt-4">
-              STAKE TOKENS
-            </h1>
-            <div className="mx-4 mt-1 flex flex-col gap-2 pb-2">
-              <p className="text-[14px] font-Roboto text-gray-500">
-                The point of $MK is not to just buy and trade, but to stake your
-                token in Meme Kombat and bet on battles for the chance to win
-                big! Alongside our
-              </p>
-              <p className="text-[14px] font-Roboto text-black">READ MORE »</p>
+          <div className="w-full md:w-[48%] xl:w-[25%] bg-white rounded-3xl">
+            <div className="relative h-[200px] w-full rounded-3xl">
+              <Image
+                src={"/step1.png"}
+                width={"300"}
+                height={"400"}
+                alt="card-img"
+                className="z-0 h-full w-full rounded-3xl object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-3xl"></div>
+              <div className="absolute bottom-4 left-4 right-4 text-left">
+                <h1 className="text-[33px] md:text-[28px] xl:text-[33px] font-Power font-semibold text-white">
+                  Handball
+                </h1>
+              </div>
+            </div>
+            <div className="flex flex-col mx-3 mt-4 gap-5">
+              {/* *******************  1st Row  ***************** */}
+              <div className="flex flex-row justify-between">
+                <div className="w-[48%] my-auto">
+                  <p className="text-[11px] text-bold font-Roboto text-black">
+                    👕 Manchester United
+                  </p>
+                  <p className="text-[11px] text-bold font-Roboto text-black">
+                    👕 Manchester United
+                  </p>
+                </div>
+                <div className="w-[48%] flex justify-end gap-1">
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                </div>
+              </div>
+              {/* *******************  2nd Row  ***************** */}
+              <div className="flex flex-row justify-between">
+                <div className="w-[48%] my-auto">
+                  <p className="text-[11px] text-bold font-Roboto text-black">
+                    👕 Manchester United
+                  </p>
+                  <p className="text-[11px] text-bold font-Roboto text-black">
+                    👕 Manchester United
+                  </p>
+                </div>
+                <div className="w-[48%] flex justify-end gap-1">
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                </div>
+              </div>
+              {/* *******************  3rd Row  ***************** */}
+              <div className="flex flex-row justify-between">
+                <div className="w-[48%] my-auto">
+                  <p className="text-[11px] text-bold font-Roboto text-black">
+                    👕 Manchester United
+                  </p>
+                  <p className="text-[11px] text-bold font-Roboto text-black">
+                    👕 Manchester United
+                  </p>
+                </div>
+                <div className="w-[48%] flex justify-end gap-1">
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                  <p className="p-2 border-gray-400 bg-slate-300 border-[1px] text-[10px] text-black font-Bakbak my-auto rounded">
+                    1,75
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           {/* *******************************   Post Card 3    *************************** */}
-          <div className="w-full md:w-[48%] xl:w-[23.333%] bg-white rounded-2xl">
-            <Image
-              src={"/step2.png"}
-              width={600}
-              height={200}
-              alt="card"
-              style={{
-                borderRadius: "1rem",
-                width: "100%",
-                height: "200px",
-                objectFit: "cover",
-                objectPosition: "top", // You can adjust this value as needed
-              }}
-            />
-            <h1 className="text-[21px] text-[#021133] font-Power font-extrabold ml-4 mt-4">
-              ENJOY THE GAME
-            </h1>
-            <div className="mx-4 mt-1 flex flex-col gap-2 ">
-              <p className="text-[14px] font-Roboto text-gray-500">
-                The point of $MK is not to just buy and trade, but to stake your
-                token in Meme Kombat and bet on battles for the chance to win
-                big! Alongside our
-              </p>
-              <p className="text-[14px] font-Roboto text-black">READ MORE »</p>
+          <div className="w-full md:w-[48%] xl:w-[25%] bg-white rounded-3xl">
+            <div className="relative h-[200px] w-full rounded-3xl">
+              <Image
+                src={"/step2.png"}
+                width={"300"}
+                height={"400"}
+                alt="card-img"
+                className="z-0 h-full w-full rounded-3xl object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent rounded-3xl"></div>
+              <div className="absolute bottom-4 left-4 right-4 text-left">
+                <h1 className="text-[33px] md:text-[28px] xl:text-[33px] font-Power font-semibold text-white">
+                  Tennis
+                </h1>
+              </div>
+            </div>
+            {/* *******************    Player  Heading       ************ */}
+            <div className="flex flex-col mx-3 mt-4 gap-1">
+              <div className=" flex gap-1">
+                <div className="w-[35%]">
+                  <p className="text-[11px] text-black font-bold">Player 1</p>
+                </div>
+                <div className="w-[35%]">
+                  <p className="text-[11px] text-black font-bold">Player 2</p>
+                </div>
+                <div className="w-[15%] flex items-center justify-center">
+                  <p className="text-[11px] text-black"></p>
+                </div>
+                <div className="w-[15%] flex items-center justify-center">
+                  <p className="text-[11px] text-black"></p>
+                </div>
+              </div>
+              {/* *******************    Player  1       ************ */}
+              <div className=" flex gap-1">
+                <div className="w-[35%]">
+                  <p className="text-[10px] text-black">Dimer Dzumhar</p>
+                </div>
+                <div className="w-[35%]">
+                  <p className="text-[10px] text-black">- Andria</p>
+                </div>
+                <div className="w-[15%] flex items-center justify-center">
+                  <p className="text-[11px] text-black">0.30</p>
+                </div>
+                <div className="w-[15%] flex items-center justify-center">
+                  <p className="text-[11px] text-black">1.60</p>
+                </div>
+              </div>
+              {/* *******************    Player  2       ************ */}
+              <div className=" flex gap-1">
+                <div className="w-[35%]">
+                  <p className="text-[10px] text-black">Dimer Dzumhar</p>
+                </div>
+                <div className="w-[35%]">
+                  <p className="text-[10px] text-black">- Andria</p>
+                </div>
+                <div className="w-[15%] flex items-center justify-center">
+                  <p className="text-[11px] text-black">0.30</p>
+                </div>
+                <div className="w-[15%] flex items-center justify-center">
+                  <p className="text-[11px] text-black">1.60</p>
+                </div>
+              </div>
+              {/* *******************    Player  3       ************ */}
+              <div className=" flex gap-1">
+                <div className="w-[35%]">
+                  <p className="text-[10px] text-black">Dimer Dzumhar</p>
+                </div>
+                <div className="w-[35%]">
+                  <p className="text-[10px] text-black">- Andria</p>
+                </div>
+                <div className="w-[15%] flex items-center justify-center">
+                  <p className="text-[11px] text-black">0.30</p>
+                </div>
+                <div className="w-[15%] flex items-center justify-center">
+                  <p className="text-[11px] text-black">1.60</p>
+                </div>
+              </div>
+              {/* *******************    Player  4       ************ */}
+              <div className=" flex gap-1">
+                <div className="w-[35%]">
+                  <p className="text-[10px] text-black">Dimer Dzumhar</p>
+                </div>
+                <div className="w-[35%]">
+                  <p className="text-[10px] text-black">- Andria</p>
+                </div>
+                <div className="w-[15%] flex items-center justify-center">
+                  <p className="text-[11px] text-black">0.30</p>
+                </div>
+                <div className="w-[15%] flex items-center justify-center">
+                  <p className="text-[11px] text-black">1.60</p>
+                </div>
+              </div>
+              {/* *******************    Player  5       ************ */}
+              <div className=" flex gap-1">
+                <div className="w-[35%]">
+                  <p className="text-[10px] text-black">Dimer Dzumhar</p>
+                </div>
+                <div className="w-[35%]">
+                  <p className="text-[10px] text-black">- Andria</p>
+                </div>
+                <div className="w-[15%] flex items-center justify-center">
+                  <p className="text-[11px] text-black">0.30</p>
+                </div>
+                <div className="w-[15%] flex items-center justify-center">
+                  <p className="text-[11px] text-black">1.60</p>
+                </div>
+              </div>
+              {/* *******************    Player  6       ************ */}
+              <div className=" flex gap-1">
+                <div className="w-[35%]">
+                  <p className="text-[10px] text-black">Dimer Dzumhar</p>
+                </div>
+                <div className="w-[35%]">
+                  <p className="text-[10px] text-black">- Andria</p>
+                </div>
+                <div className="w-[15%] flex items-center justify-center">
+                  <p className="text-[11px] text-black">0.30</p>
+                </div>
+                <div className="w-[15%] flex items-center justify-center">
+                  <p className="text-[11px] text-black">1.60</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
