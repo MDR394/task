@@ -26,13 +26,15 @@ const header = () => {
           ></Image>
           <div className="bg-auto bg-no-repeat bg-center  w-10/12 mx-auto flex justify-between pt-5">
             <div className="logo">
-              <Image
-                src={"/logo.png"}
-                id="logo"
-                width="200"
-                height="200"
-                alt="logo"
-              />
+              <Link href="/">
+                <Image
+                  src={"/logo.png"}
+                  id="logo"
+                  width="200"
+                  height="200"
+                  alt="logo"
+                />
+              </Link>
             </div>
             <div className="menu md:flex gap-8 my-auto hidden">
               <Link href={"#utility"} className="font-bold text-[20px]">

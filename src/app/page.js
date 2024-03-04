@@ -73,21 +73,25 @@ export default function Home() {
             src="/lotto.png"
             title="Lotto Stock"
             detail="Choose the 6 stocks Market that will be the best performers tomorrow and win the jackpot."
+            link="/lotto-stock"
           />
           <Cart
             src="/card-2.png"
             title="Casino Competition​"
             detail="Win the jackpot by guessing the number where the ball will land; closest or exact guesses triumph."
+            link="/casino-competition"
           />
           <Cart
             src="/card-3.jpeg"
             title="Race for Thrillx"
             detail="Maximize your score by covering a set distance within a specified time to avoid elimination and win the jackpot."
+            link="/race-for-thrillx"
           />
           <Cart
             src="/card-4.png"
             title="Sport Betting Competition"
             detail="Earn points by accurately predicting match details. The top 10 to 50 players with the most points share the jackpot."
+            link="/sport-betting"
           />
         </div>
       </section>

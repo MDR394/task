@@ -40,6 +40,12 @@ body {
     text-wrap: balance;
   }
 }
+#lotto-stock-header {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+}
 
 @media screen and (max-width: 500px) {
   #logo {
