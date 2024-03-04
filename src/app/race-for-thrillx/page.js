@@ -11,7 +11,7 @@ function page() {
           <Image
             src={"/card-3.jpeg"}
             id="sportBetting-header-img"
-            className="absolute bg-cover -z-10 h-[100vh] w-auto"
+            className="absolute bg-cover -z-10 h-[100vh] md:h-[80vh] xl:h-[100vh] w-auto"
             width="1550"
             height={"1000"}
             alt="logo"
@@ -22,7 +22,7 @@ function page() {
             }}
           />
           <div className="absolute -z-10 inset-0 bg-gradient-to-t from-black to-transparent"></div>
-          <div className="bg-auto bg-no-repeat bg-center  w-10/12 mx-auto flex justify-between pt-5">
+          <div className="bg-auto bg-no-repeat bg-center w-11/12 md:w-full xl:w-10/12 mx-auto flex justify-between pt-5">
             <div className="logo">
               <Link href="/">
                 <Image
@@ -35,25 +35,34 @@ function page() {
               </Link>
             </div>
             <div className="menu md:flex gap-8 my-auto hidden">
-              <Link href={"/"} className="font-bold text-[15px]">
+              <Link
+                href={"/"}
+                className="font-bold md:text-[10px] lg:text-[15px] xl:text-[15px]"
+              >
                 Home
               </Link>
-              <Link href={"/lotto-stock"} className="font-bold text-[15px]">
+              <Link
+                href={"/lotto-stock"}
+                className="font-bold md:text-[10px] lg:text-[15px]"
+              >
                 Lotto Stock
               </Link>
               <Link
                 href={"/casino-competition"}
-                className="font-bold text-[15px]"
+                className="font-bold md:text-[10px] lg:text-[15px]"
               >
                 Casino Competition​
               </Link>
               <Link
                 href={"/race-for-thrillx"}
-                className="font-bold text-[15px]"
+                className="font-bold md:text-[10px] lg:text-[15px]"
               >
                 Race for Thrillx
               </Link>
-              <Link href={"/sport-betting"} className="font-bold text-[15px]">
+              <Link
+                href={"/sport-betting"}
+                className="font-bold md:text-[10px] lg:text-[15px]"
+              >
                 Sport Betting Competition
               </Link>
             </div>
@@ -65,9 +74,10 @@ function page() {
       </header>
 
       <section className="w-11/12 mx-auto mt-[230px] md:mt-[500px] bg-[#D2E2F1] p-6 rounded-2xl mb-12">
-        <div className="flex md:flex-row flex-col  gap-6">
+        <div className="flex md:flex-row md:flex-wrap xl:flex-nowrap flex-col  gap-6">
           {/* ***********************     How to play Card      ************************* */}
-          <div className="bg-white w-full md:w-[35%] rounded-2xl pb-3">
+
+          <div className="bg-white w-full md:w-[48%] xl:w-[35%] rounded-2xl pb-3">
             <Image
               src={"/lotto.png"}
               width={600}
@@ -113,7 +123,7 @@ function page() {
             </div>
           </div>
           {/* *******************************   Post Card 1    *************************** */}
-          <div className="w-full md:w-[23.333%] bg-white rounded-2xl">
+          <div className="w-full md:w-[48%] xl:w-[23.333%]  bg-white rounded-2xl">
             <Image
               src={"/step3.png"}
               width={600}
@@ -140,7 +150,7 @@ function page() {
             </div>
           </div>
           {/* *******************************   Post Card 2    *************************** */}
-          <div className="w-full md:w-[23.333%] bg-white rounded-2xl">
+          <div className="w-full md:w-[48%] xl:w-[23.333%] bg-white rounded-2xl">
             <Image
               src={"/step4.png"}
               width={600}
@@ -166,9 +176,8 @@ function page() {
               <p className="text-[14px] font-Roboto text-black">READ MORE »</p>
             </div>
           </div>
-
           {/* *******************************   Post Card 3    *************************** */}
-          <div className="w-full md:w-[23.333%] bg-white rounded-2xl">
+          <div className="w-full md:w-[48%] xl:w-[23.333%] bg-white rounded-2xl">
             <Image
               src={"/step2.png"}
               width={600}

@@ -52,9 +52,10 @@ function page() {
       </section>
 
       <section className="w-11/12 mx-auto mt-[80px] bg-[#D2E2F1] p-6 rounded-2xl mb-12">
-        <div className="flex md:flex-row flex-col  gap-6">
+        <div className="flex md:flex-row md:flex-wrap xl:flex-nowrap flex-col  gap-6">
           {/* ***********************     How to play Card      ************************* */}
-          <div className="bg-white w-full md:w-[35%] rounded-2xl pb-3">
+
+          <div className="bg-white w-full md:w-[48%] xl:w-[35%] rounded-2xl pb-3">
             <Image
               src={"/lotto.png"}
               width={600}
@@ -100,7 +101,7 @@ function page() {
             </div>
           </div>
           {/* *******************************   Post Card 1    *************************** */}
-          <div className="w-full md:w-[23.333%] bg-white rounded-2xl">
+          <div className="w-full md:w-[48%] xl:w-[23.333%]  bg-white rounded-2xl">
             <Image
               src={"/step3.png"}
               width={600}
@@ -127,7 +128,7 @@ function page() {
             </div>
           </div>
           {/* *******************************   Post Card 2    *************************** */}
-          <div className="w-full md:w-[23.333%] bg-white rounded-2xl">
+          <div className="w-full md:w-[48%] xl:w-[23.333%] bg-white rounded-2xl">
             <Image
               src={"/step4.png"}
               width={600}
@@ -153,9 +154,8 @@ function page() {
               <p className="text-[14px] font-Roboto text-black">READ MORE »</p>
             </div>
           </div>
-
           {/* *******************************   Post Card 3    *************************** */}
-          <div className="w-full md:w-[23.333%] bg-white rounded-2xl">
+          <div className="w-full md:w-[48%] xl:w-[23.333%] bg-white rounded-2xl">
             <Image
               src={"/step2.png"}
               width={600}
@@ -191,7 +191,6 @@ function page() {
           win it.
         </h2>
       </section>
-
       <Footer />
     </>
   );

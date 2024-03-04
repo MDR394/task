@@ -26,13 +26,18 @@ export default function Home() {
       <Header />
       {/* ***********************      CHOOSE YOUR CURRENCY      ************************ */}
       <section className="w-11/12 mx-auto mt-[200px] md:mt-[400px]">
-        <h1 className="text-center mt-12 text-xl font-Power">
-          UNTIL LISTINGS AND LAUNCH OF MEME KOMBAT
+        <h1 className="font-Roboto text-[22px] text-[#B7B4BB] mt-3">
+          With a market worth over $2,531 billion and more than 2.5 billion
+          users worldwide, casino games, mobile games, sports betting and
+          lottery games offer huge potential for competitive tournaments. We aim
+          to energize this ecosystem by launching digital tournaments where
+          participants feed a jackpot via their registrations, then compete to
+          win it.
         </h1>
-        <div className="flex justify-center mt-5">
+        {/* <div className="flex justify-center mt-5">
           <ProgressBar />
-        </div>
-        <h1 className="text-center mt-5 text-xl font-Power">
+        </div> */}
+        <h1 className="text-center font-Bakbak text-[24px] md:text-[34px] mt-6">
           CHOOSE YOUR CURRENCY
         </h1>
         <div className="mt-5">
@@ -119,7 +124,7 @@ export default function Home() {
         </div>
         <div className="w-full md:w-2/4 flex justify-end mt-9">
           <Image
-            className="origin-bottom-right md:mt-0 -mt-[80px] scale-105 md:scale-150"
+            className="origin-bottom-right md:mt-0 -mt-[80px] scale-105 md:scale-100 xl:scale-150"
             id="person"
             src={"/perrson-1.png"}
             width={"450"}
