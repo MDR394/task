@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
-import Chart from 'chart.js/auto';
+import React, { useEffect, useRef } from "react";
+import Chart from "chart.js/auto";
 
 function PieChart() {
   const chartRef = useRef(null);
@@ -10,16 +10,26 @@ function PieChart() {
       chartInstance.current.destroy();
     }
 
-    const myChartRef = chartRef.current.getContext('2d');
+    const myChartRef = chartRef.current.getContext("2d");
     chartInstance.current = new Chart(myChartRef, {
-      type: 'pie',
+      type: "pie",
       data: {
-        labels: ['Jan:600', 'Feb:100', 'Mar:200'],
+        labels: [
+          "50% - PRESALE",
+          "30% - STAKING AND CAPITATION REWARD",
+          "10% - DEX",
+          "10% - COMMUNITY REWARD",
+        ],
         datasets: [
           {
-            label: 'My First Dataset',
-            data: [600, 100, 200],
-            backgroundColor: ['rgb(255, 99, 132)', 'rgb(54, 162, 235)', 'rgb(255, 205, 86)'],
+            label: "Numbers",
+            data: [490, 300, 100, 100],
+            backgroundColor: [
+              "#3399FE",
+              "rgb(255, 99, 132)",
+              "#F8A243",
+              "#44FF50",
+            ],
             hoverOffset: 4,
           },
         ],
@@ -27,7 +37,11 @@ function PieChart() {
       options: {
         plugins: {
           legend: {
-            position: 'bottom',
+            position: "bottom",
+            align: "start",
+            labels: {
+              color: "white",
+            },
           },
         },
       },
@@ -42,7 +56,7 @@ function PieChart() {
 
   return (
     <div>
-      <canvas ref={chartRef} style={{ width: '300px', height: '300px' }} />
+      <canvas ref={chartRef} style={{ width: "300px", height: "300px" }} />
     </div>
   );
 }

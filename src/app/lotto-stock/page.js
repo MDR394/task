@@ -9,7 +9,7 @@ function page() {
     <>
       <FeaturesHeader />
 
-      <section className="mt-[230px] md:mt-[400px] w-10/12 mx-auto flex flex-row md:flex-row justify-center flex-wrap md:flex-nowrap gap-5">
+      {/* <section className="mt-[230px] md:mt-[400px] w-10/12 mx-auto flex flex-row md:flex-row justify-center flex-wrap md:flex-nowrap gap-5">
         <div className="w-2/5 flex flex-col items-center gap-2">
           <h1 className="font-Bakbak text-3xl">$</h1>
           <h1 className="font-Power text-[20px]">689,904</h1>
@@ -49,9 +49,9 @@ function page() {
             Check Now
           </button>
         </div>
-      </section>
+      </section> */}
 
-      <section className="w-11/12 mx-auto mt-[80px] bg-[#D2E2F1] p-6 rounded-2xl mb-12">
+      <section className="w-11/12 mx-auto mt-[230px] md:mt-[400px] bg-[#D2E2F1] p-6 rounded-2xl mb-12">
         <div className="flex md:flex-row md:flex-wrap xl:flex-nowrap flex-col  gap-6">
           {/* ***********************     How to play Card      ************************* */}
 

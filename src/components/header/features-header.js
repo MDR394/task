@@ -6,18 +6,23 @@ function featuresHeader() {
   return (
     <>
       <div className="bg-[#021133]">
-        <header>
-          <div className="w-full flex justify-center -mt-1">
+        <header className="bg-black/75">
+          <div className="w-full flex justify-center -mt-2 pb-2">
             <Image
               src={"/lotto-stock-header.jpg"}
-              id="lotto-stock-header"
-              className="absolute bg-cover -z-10 mt-7"
-              width="1350"
+              id="sportBetting-header-img"
+              className="absolute bg-cover -z-10 h-[50vh] md:h-[50vh] xl:h-[100vh] w-auto"
+              width="1550"
               height={"1000"}
               alt="logo"
-            ></Image>
-
-            <div className="bg-auto bg-no-repeat bg-center  w-10/12 mx-auto flex justify-between pt-5">
+              style={{
+                width: "100%",
+                objectFit: "cover",
+                objectPosition: "center",
+              }}
+            />
+            <div className="absolute -z-10 inset-0 bg-gradient-to-t from-black to-transparent"></div>
+            <div className="bg-auto bg-no-repeat bg-center w-11/12 md:w-full xl:w-10/12 mx-auto flex justify-between pt-5">
               <div className="logo">
                 <Link href="/">
                   <Image
@@ -30,25 +35,34 @@ function featuresHeader() {
                 </Link>
               </div>
               <div className="menu md:flex gap-8 my-auto hidden">
-                <Link href={"/"} className="font-bold text-[15px]">
+                <Link
+                  href={"/"}
+                  className="font-bold md:text-[10px] lg:text-[15px] xl:text-[15px]"
+                >
                   Home
                 </Link>
-                <Link href={"/lotto-stock"} className="font-bold text-[15px]">
+                <Link
+                  href={"/lotto-stock"}
+                  className="font-bold md:text-[10px] lg:text-[15px]"
+                >
                   Lotto Stock
                 </Link>
                 <Link
                   href={"/casino-competition"}
-                  className="font-bold text-[15px]"
+                  className="font-bold md:text-[10px] lg:text-[15px]"
                 >
                   Casino Competition​
                 </Link>
                 <Link
                   href={"/race-for-thrillx"}
-                  className="font-bold text-[15px]"
+                  className="font-bold md:text-[10px] lg:text-[15px]"
                 >
                   Race for Thrillx
                 </Link>
-                <Link href={"/sport-betting"} className="font-bold text-[15px]">
+                <Link
+                  href={"/sport-betting"}
+                  className="font-bold md:text-[10px] lg:text-[15px]"
+                >
                   Sport Betting Competition
                 </Link>
               </div>
