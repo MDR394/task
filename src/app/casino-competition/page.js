@@ -95,7 +95,7 @@ function casinoCompetition() {
             </h1>
             <div className="mx-4 mt-1 flex flex-col gap-1">
               <p className="text-[14px] font-Roboto text-gray-500">
-                The point of $MK is not to just buy and trade, but to stake your
+                The point of Thrillx is not to just buy and trade, but to stake your
                 token in Meme Kombat and bet on battles for the chance to win
                 big! The point of $MK is not to just buy and trade, but to stake
                 your token in Meme Kombat and bet on battles.
