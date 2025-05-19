@@ -1,22 +1,25 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: Deployment  # Specifies that this is a Kubernetes Deployment resource
 metadata:
-  name: {{ .Release.Name }}-nextjs
+  name: {{ .Release.Name }}-nextjs  # Deployment name will be dynamic based on Helm release name
   labels:
-    app: nextjs
+    app: nextjs  # Label used to identify this app, useful for selectors and organization
+
 spec:
-  replicas: {{ .Values.replicaCount }}
+  replicas: {{ .Values.replicaCount }}  # Number of pod replicas, defined in values.yaml
   selector:
     matchLabels:
-      app: nextjs
+      app: nextjs  # Selector to match pods with this label
+
   template:
     metadata:
       labels:
-        app: nextjs
+        app: nextjs  # Labels assigned to the pod for identification and service targeting
+
     spec:
       containers:
-        - name: nextjs
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-          imagePullPolicy: {{ .Values.image.pullPolicy }}
+        - name: nextjs  # Container name inside the pod
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"  # Docker image and tag defined in values.yaml
+          imagePullPolicy: {{ .Values.image.pullPolicy }}  # Determines when the image should be pulled (e.g., Always)
           ports:
-            - containerPort: {{ .Values.containerPort }}
+            - containerPort: {{ .Values.containerPort }}  # Container port exposed inside the pod (e.g., 3000 for Next.js)

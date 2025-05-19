@@ -1,12 +1,15 @@
 apiVersion: v1
-kind: Service
+kind: Service  # Defines this resource as a Kubernetes Service
 metadata:
-  name: {{ .Release.Name }}-nextjs
+  name: {{ .Release.Name }}-nextjs  # The name of the Service, dynamically set based on Helm release
+
 spec:
-  type: {{ .Values.service.type }}
+  type: {{ .Values.service.type }}  # Type of service (e.g., LoadBalancer, NodePort), defined in values.yaml
+
   selector:
-    app: nextjs
+    app: nextjs  # This tells the service to forward traffic to pods with the label 'app: nextjs'
+
   ports:
-    - protocol: TCP
-      port: {{ .Values.service.port }}
-      targetPort: {{ .Values.containerPort }}
+    - protocol: TCP  # Specifies the protocol used for communication
+      port: {{ .Values.service.port }}  # External port exposed by the service (e.g., 80 or 3000)
+      targetPort: {{ .Values.containerPort }}  # Internal port on the container to forward traffic to
